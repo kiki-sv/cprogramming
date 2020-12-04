@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+	char letter;
+	int low_vowel, upper_vowel;
+	
+	printf("Enter a letter of the alphabet: ");
+	scanf("%c", &letter);
+	
+	low_vowel = (letter == "a" || letter == "e" || letter == "i" || letter == "o" || letter == "u");
+	upper_vowel = (letter == "A" || letter == "E" || letter == "I" || letter == "O" || letter == "U");
+	
+	if (low_vowel || upper_vowel)
+	{
+		printf("You entered a vowel letter.");
+	}
+	else
+	{
+		printf("You entered a consonant letter.");
+	}
+	
+	return 0;
+	
+}
