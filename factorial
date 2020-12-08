@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+	int i, num, fac = 1;
+	
+	do
+	{
+		printf("Enter a positive integer: ");
+		scanf("%d", &num);
+	}
+	while (num < 0);
+	
+	for (i =1; i <= num; i++){
+		fac *= i;
+	}
+	printf("The factorial of the number you entered is %d.", fac);
+	
+	return 0;
+	
+	
+	
+}
